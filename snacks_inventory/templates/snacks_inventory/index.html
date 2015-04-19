@@ -1,0 +1,11 @@
+{% if all_snacks_list %}
+    <ul>
+    {% for snack in all_snacks_list %}
+        <li>{{ snack.name}}</li>
+        <li>{{ snack.original_quantity}}</li>
+        <li>{{ snack.remaining_quantity}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No snacks are available.</p>
+{% endif %}
